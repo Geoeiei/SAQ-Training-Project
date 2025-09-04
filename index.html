@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSKRU SAQ Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>SAQ Training</h1>
+                    <p class="subtitle">Speed • Agility • Quickness</p>
+                </div>
+                <nav class="nav-controls">
+                    <button class="back-btn" id="backBtn" style="display: none;">
+                        <span class="back-arrow">←</span> กลับ
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div id="mainPage" class="page active">
+            <section class="saq-info">
+                <div class="info-container">
+                    <h2 class="info-title">SAQ Training คืออะไร?</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">🏃‍♂️</div>
+                            <h3>Speed (ความเร็ว)</h3>
+                            <p>การพัฒนาความเร็วในการเคลื่อนที่ การเร่งความเร็ว และการรักษาความเร็วสูงสุด</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🤸‍♂️</div>
+                            <h3>Agility (ความคล่องแคล่ว)</h3>
+                            <p>การพัฒนาความสามารถในการเปลี่ยนทิศทางอย่างรวดเร็ว และการควบคุมการเคลื่อนไหว</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">⚡</div>
+                            <h3>Quickness (ความว่องไว)</h3>
+                            <p>การพัฒนาปฏิกิริยาตอบสนองที่รวดเร็ว และการเคลื่อนไหวแบบกะทันหัน</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="training-section">
+                <h2 class="section-title">เลือกการฝึก SAQ</h2>
+                <div class="main-categories">
+                    <div class="category-card" data-category="speed">
+                        <div class="card-header">
+                            <div class="category-icon">🏃‍♂️</div>
+                            <div class="category-badge">Speed</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>การฝึกความเร็ว</h3>
+                            <p>พัฒนาความเร็วในการวิ่ง การเร่งความเร็ว และเทคนิคการวิ่งที่มีประสิทธิภาพ</p>
+                            <div class="exercise-count">9 ท่าการฝึก</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="view-exercises">ดูท่าฝึกทั้งหมด →</span>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="agility">
+                        <div class="card-header">
+                            <div class="category-icon">🤸‍♂️</div>
+                            <div class="category-badge">Agility</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>การฝึกความคล่องแคล่ว</h3>
+                            <p>พัฒนาการเปลี่ยนทิศทาง การหลบหลีก และการควบคุมตัวในการเคลื่อนไหว</p>
+                            <div class="exercise-count">4 ท่าการฝึก</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="view-exercises">ดูท่าฝึกทั้งหมด →</span>
+                        </div>
+                    </div>
+
+                    <div class="category-card" data-category="quickness">
+                        <div class="card-header">
+                            <div class="category-icon">⚡</div>
+                            <div class="category-badge">Quickness</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>การฝึกความว่องไว</h3>
+                            <p>พัฒนาปฏิกิริยาตอบสนอง การเริ่มต้นที่เร็ว และความแม่นยำในการเคลื่อนไหว</p>
+                            <div class="exercise-count">7 ท่าการฝึก</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="view-exercises">ดูท่าฝึกทั้งหมด →</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="exercisesPage" class="page">
+            <div class="page-header">
+                <h2 id="categoryTitle"></h2>
+                <p id="categoryDescription" class="page-subtitle"></p>
+            </div>
+            <div id="exercisesList" class="exercises-grid"></div>
+        </div>
+
+        <div id="detailPage" class="page">
+            <article class="exercise-detail">
+                <div class="detail-header">
+                    <h2 id="exerciseTitle"></h2>
+                    <div class="detail-tags">
+                        <span class="tag" id="exerciseCategory"></span>
+                    </div>
+                </div>
+                
+                <div class="detail-content">
+                    <div class="media-section">
+                        <div class="video-container">
+                            <video id="exerciseVideo" controls>
+                                <source src="" type="video/mp4">
+                                บราวเซอร์ของคุณไม่รองรับการแสดงผลของวีดีโอ
+                            </video>
+                            <div id="videoPlaceholder" class="video-placeholder">
+                                <div class="placeholder-content">
+                                    <div class="placeholder-icon">📹</div>
+                                    <p>วีดีโอสาธิตจะแสดงที่นี่</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-section">
+                        <section class="description-section">
+                            <h3>รายละเอียดการฝึก</h3>
+                            <div id="exerciseDescription" class="description-content"></div>
+                        </section>
+                        
+                        <section class="instructions-section">
+                            <h3>ขั้นตอนการฝึก</h3>
+                            <ol id="exerciseSteps" class="steps-list"></ol>
+                        </section>
+                        
+                        <section class="tips-section">
+                            <h3>เทคนิคและข้อควรระวัง</h3>
+                            <ul id="exerciseTips" class="tips-list"></ul>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <!-- Hello! This is Geo, this project is a part of my reseach. -->
+    <!-- Open console if you wanted to contact me! -->
+    <script src="app.js"></script>
+</body>
+</html>
