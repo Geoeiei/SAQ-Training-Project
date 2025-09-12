@@ -4,14 +4,15 @@ const exercisesData = {
         {
             id: 1,
             title: "High Knee Marching",
-            description: "การฝึกยกเข่าสูงแบบเดินเพื่อพัฒนาความแข็งแรงของกล้ามเนื้อขา",
+            description: "ฝึกการยกเข่าสูงและเพิ่มความแข็งแรงของสะโพก",
             fullDescription: "การฝึก High Knee Marching เป็นการเตรียมความพร้อมที่สำคัญสำหรับนักกีฬา ช่วยพัฒนาความแข็งแรงของกล้ามเนื้อข้อเข่า การทรงตัว และการประสานงานของกล้ามเนื้อ เหมาะสำหรับการอบอุ่นร่างกายก่อนการฝึกหรือการแข่งขัน",
             steps: [
-                "ยืนตรงในท่าเตรียมพร้อม แขนอยู่ข้างลำตัว",
-                "ยกเข่าซ้ายสูงจนถึงระดับสะโพก พร้อมแกว่งแขนขวาขึ้น",
-                "วางเท้าซ้ายลงแล้วยกเข่าขวาสูง พร้อมแกว่งแขนซ้ายขึ้น",
-                "สลับข้างไปมาในจังหวะช้าๆ ควบคุมการเคลื่อนไหว",
-                "ทำต่อเนื่องเป็นเวลา 30 วินาที ต่อ 1 เซ็ต"
+                "ยืนท่าเตรียมที่จุดเริ่มต้น ยืนตรงเท้าชิด",
+                "จำลองการวิ่งด้วยการเดิน ฝึกยกเข่า ขาตามเหยียดตึง",
+                "เดินยกเข่าสูง ขาท่อนบนของเท้าน้าขนานพื้น ล๊อคข้อเท้า",
+                "แขนแกว่งในลักษณะการวิ่ง ท้ามุมในลักษณะ 90 องศา",
+                "เดินแกว่งแขนพร้อมยกเข่าสูงไปตลอดระยะทางที่ก้าหนด โดยไม่ยกส้นเท้า",
+										 "ปฏิบัติจ้านวน 4 เที่ยว"
             ],
             tips: [
                 "รักษาท่าทางตัวตรง ไม่โน้มไปข้างหน้าหรือข้างหลัง",
@@ -591,4 +592,4 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log("Wow! You opened console.");
 console.log("This project is a part of my research to impove my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
-console.log("Last edited on 05/09/2024 20:56 (By Geo of course :P)");
+console.log("Last edited on 12/09/2024 10:05 (By Geo of course :P)");
