@@ -17,7 +17,8 @@ const exercisesData = {
                 "หลังตรง ไม่เอนไปข้างหลัง",
                 "ก้าวมั่นคง ไม่รีบเกินไป"
             ],
-            videoUrl: "video/Speed/HighKneeMarching.mp4"
+            videoUrl: "https://youtu.be/e8WPGa3VJnk?si=OPR-_QhGZoYXxO6q",
+            videoType: "youtube"
         },
         {
             id: 2,
@@ -34,7 +35,8 @@ const exercisesData = {
                 "รักษาลำตัวนิ่ง ไม่กระเด้งสูง",
                 "เน้นความต่อเนื่องมากกว่าความสูงของเข่า"
             ],
-            videoUrl: "video/Speed/KneeLow.mp4"
+            videoUrl: "https://www.youtube.com/watch?v=9kzVKEjuU80",
+            videoType: "youtube"
         },
         {
             id: 3,
@@ -52,7 +54,8 @@ const exercisesData = {
                 "รักษาจังหวะสม่ำเสมอ",
                 "ใช้แขนแกว่งช่วยเพื่อให้ได้ momentum"
             ],
-            videoUrl: "video/Speed/HighKnee.mp4"
+            videoUrl: "https://youtu.be/shE9D-bC6os?si=F1tRitWbaem8sCoZ",
+            videoType: "youtube"
         },
         {
             id: 4,
@@ -69,7 +72,8 @@ const exercisesData = {
                 "จังหวะเร็ว ไม่ก้าวยาวเกินไป",
                 "รักษาแกนลำตัว (core) ให้มั่นคง"
             ],
-            videoUrl: "video/Speed/ButtKicks.mp4"
+            videoUrl: "https://youtu.be/Ze8e4xUYc3E",
+            videoType: "youtube"
         },
         {
             id: 5,
@@ -87,7 +91,8 @@ const exercisesData = {
                 "ลงเท้าเบาและเป็นจังหวะ พยายามไม่รีบ",
                 "ใช้แขนช่วยให้จังหวะต่อเนื่อง"
             ],
-            videoUrl: "video/Speed/ASkips.mp4"
+            videoUrl: "https://youtu.be/E9d0fWFmIKI",
+            videoType: "youtube"
         },
         {
             id: 6,
@@ -106,7 +111,8 @@ const exercisesData = {
                 "ก้าวขาให้มั่นคงและเร็ว",
                 "ค่อยๆฝึกให้ชำนาญก่อน จึงค่อยเพิ่มความเร็ว"
             ],
-            videoUrl: "video/Speed/KneeLowHurdle.mp4"
+            videoUrl: "https://youtu.be/jgTHBNEPfA0",
+            videoType: "youtube"
         },
         {
             id: 7,
@@ -124,7 +130,8 @@ const exercisesData = {
                 "ลงเท้าเบาและต่อเนื่อง",
                 "รักษาสมดุลลำตัว"
             ],
-            videoUrl: "video/Speed/HighKneeHurdle.mp4"
+            videoUrl: "https://youtu.be/R0r7eGpwMiQ",
+            videoType: "youtube"
         },
         {
             id: 8,
@@ -142,7 +149,8 @@ const exercisesData = {
                 "ระวังไม่สะดุดรั้ว",
                 "ใช้แขนแกว่งให้เป็นจังหวะ (rhythm)"
             ],
-            videoUrl: "video/Speed/ASkipsHurdle.mp4"
+            videoUrl: "https://youtu.be/27NzeV-NBoQ",
+            videoType: "youtube"
         },
         {
             id: 9,
@@ -159,7 +167,8 @@ const exercisesData = {
                 "ยกเข่าเร็ว ลงเท้าด้วยปลายเท้า",
                 "รักษาแกนลำตัว (core) ให้มั่นคงและไม่บิดเอว"
             ],
-            videoUrl: "video/Speed/WallSpeedy.mp4"
+            videoUrl: "https://youtu.be/jSam3dHdXiI",
+            videoType: "youtube"
         }
     ],
     agility: [
@@ -181,7 +190,8 @@ const exercisesData = {
                 "ฝึกใช้ทั้งซ้ายและขวาให้สมดุล",
                 "วิ่งเต็มสปีดในช่วงตรง"
             ],
-            videoUrl: "video/Agility/TDrill.mp4"
+            videoUrl: "https://youtu.be/WysRECzzfmE",
+            videoType: "youtube"
         },
         {
             id: 11,
@@ -197,7 +207,8 @@ const exercisesData = {
                 "รักษาจังหวะไม่ให้เสียตอนเปลี่ยนทาง",
                 "ใช้สายตาโฟกัสเส้นทางล่วงหน้า ไม่มองลงที่พื้น"
             ],
-            videoUrl: "video/Agility/ZigZag.mp4"
+            videoUrl: "https://youtu.be/X_cdTeTIG3o",
+            videoType: "youtube"
         },
         {
             id: 12,
@@ -216,7 +227,8 @@ const exercisesData = {
                 "โฟกัสที่การเคลื่อนตัวเร็วแต่แม่นยำ",
                 "ใช้สายตาประเมินกรวยตลอดเวลา"
             ],
-            videoUrl: "video/Agility/ConeDrill.mp4"
+            videoUrl: "https://youtu.be/-ljtN_Ae02Y",
+            videoType: "youtube"
         },
         {
             id: 13,
@@ -236,7 +248,8 @@ const exercisesData = {
                 "เริ่มจากช้าแล้วเพิ่มความเร็วขึ้นเมื่อชำนาญ",
                 "เน้นจังหวะและความแม่นยำมากกว่าความเร็วตอนแรก"
             ],
-            videoUrl: "video/Agility/NineSquareStep.mp4"
+            videoUrl: "https://youtu.be/dWxUl_FXCyw",
+            videoType: "youtube"
         }
     ],
     quickness: [
@@ -254,7 +267,8 @@ const exercisesData = {
                 "เก็บคางเล็กน้อย ป้องกันคอเคล็ด",
                 "ใช้ขาและสะโพกขับแรง ไม่ใช่แค่หลัง"
             ],
-            videoUrl: "video/Quickness/FourPointPopUp.mp4"
+            videoUrl: "https://youtu.be/iLB99wG9Op8",
+            videoType: "youtube"
         },
         {
             id: 15,
@@ -271,7 +285,8 @@ const exercisesData = {
                 "เก็บไหล่และลำตัวให้สมดุล เพื่อไม่เสียจังหวะตอนออกตัว",
                 "เหมาะสำหรับการฝึกนักกีฬาที่ต้องใช้สปีดสั้นๆ เช่น ฟุตซอลหรือบาสเกตบอล"
             ],
-            videoUrl: "video/Quickness/LyingStartOnBack.mp4"
+            videoUrl: "https://youtu.be/BLW5IF8ZKxg",
+            videoType: "youtube"
         },
         {
             id: 16,
@@ -289,7 +304,8 @@ const exercisesData = {
                 "ก้าวขาให้มั่นคงและเร็ว อย่าไขว้ขาเกินไปจนเสียสมดุล",
                 "ใช้สายตาควบคู่กับการเคลื่อนไหว เพื่อพัฒนาการประสานงาน"
             ],
-            videoUrl: "video/Quickness/LateralWeave.mp4"
+            videoUrl: "https://youtu.be/HrjMHocST7c",
+            videoType: "youtube"
         },
         {
             id: 17,
@@ -307,7 +323,8 @@ const exercisesData = {
                 "เก็บลำตัวต่ำขณะเปลี่ยนทิศทางเพื่อควบคุมแรง",
                 "ใช้สายตาโฟกัสกับมาร์คเกอร์พร้อมกับการเคลื่อนไหว"
             ],
-            videoUrl: "video/Quickness/CollectMarker.mp4"
+            videoUrl: "https://youtu.be/8VU0KUq0Zt8",
+            videoType: "youtube"
         },
         {
             id: 18,
@@ -325,7 +342,8 @@ const exercisesData = {
                 "ใช้แขนช่วยบาลานซ์ ไม่เอนลำตัวเกินไป",
                 "โฟกัสที่ความแม่นยำในการแตะ ไม่ใช่แค่ความเร็ว"
             ],
-            videoUrl: "video/Quickness/ConeDrillHandTouch.mp4"
+            videoUrl: "https://youtu.be/InW-6dbgDsk",
+            videoType: "youtube"
         },
         {
             id: 19,
@@ -343,7 +361,8 @@ const exercisesData = {
                 "ควบคุมจังหวะขาให้ต่อเนื่อง ไม่หยุดชะงัก",
                 "เน้นการใช้ปลายเท้าและการก้าวอย่างมั่นคง"
             ],
-            videoUrl: "video/Quickness/ConeDrillFootTouch.mp4"
+            videoUrl: "https://youtu.be/BGK7RQ0mxk4",
+            videoType: "youtube"
         },
         {
             id: 20,
@@ -360,7 +379,8 @@ const exercisesData = {
                 "ฝึกเปลี่ยนจากการเคลื่อนไหวเร็วไปสู่การหยุดนิ่งอย่างมั่นคง",
                 "สามารถปรับสัญญาณเป็นคำพูดหรือท่าทางได้เพื่อเพิ่มความท้าทาย"
             ],
-            videoUrl: "video/Quickness/TrafficLightsVisualReaction.mp4"
+            videoUrl: "https://youtu.be/MjBbl7GSncM",
+            videoType: "youtube"
         }
     ]
 };
@@ -377,6 +397,21 @@ const categoryLabels = {
     agility: "Agility", 
     quickness: "Quickness"
 };
+
+//ดึงรหัสจากyoutube Url
+function getYouTubeVideoId(url) {
+    if (!url) return null;
+    
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    
+    return (match && match[2].length === 11) ? match[2] : null;
+}
+
+//embed Url
+function getYouTubeEmbedUrl(videoId) {
+    return `https://www.youtube.com/embed/${videoId}?enablejsapi=1&origin=${window.location.origin}`;
+}
 
 //แอพ
 const AppState = {
@@ -449,19 +484,9 @@ const AppState = {
         document.getElementById('exerciseTitle').textContent = exercise.title;
         document.getElementById('exerciseCategory').textContent = categoryLabels[this.currentCategory];
         document.getElementById('exerciseDescription').textContent = exercise.fullDescription;
-        
-        //วีดีโอ
-        const video = document.getElementById('exerciseVideo');
-        const placeholder = document.getElementById('videoPlaceholder');
-        
-        if (exercise.videoUrl && exercise.videoUrl.trim() !== '') {
-            video.src = exercise.videoUrl;
-            video.style.display = 'block';
-            placeholder.style.display = 'none';
-        } else {
-            video.style.display = 'none';
-            placeholder.style.display = 'flex';
-        }
+
+        //โหลดวิดีโอ
+        this.loadVideo(exercise);
         
         //โหลดขั้นตอน
         const stepsContainer = document.getElementById('exerciseSteps');
@@ -470,6 +495,77 @@ const AppState = {
         //โหลดคำแนะนำ
         const tipsContainer = document.getElementById('exerciseTips');
         tipsContainer.innerHTML = exercise.tips.map(tip => `<li>${tip}</li>`).join('');
+    },
+
+    loadVideo(exercise) {
+        const videoContainer = document.getElementById('videoContainer');
+        const placeholder = document.getElementById('videoPlaceholder');
+        
+        videoContainer.innerHTML = '';
+        
+        if (!exercise.videoUrl || exercise.videoUrl.trim() === '') {
+            videoContainer.style.display = 'none';
+            placeholder.style.display = 'flex';
+            return;
+        }
+
+        const videoType = exercise.videoType || 'local'; // Default to local if not specified
+        
+        if (videoType === 'youtube') {
+            const videoId = getYouTubeVideoId(exercise.videoUrl);
+            
+            if (videoId) {
+                const embedUrl = getYouTubeEmbedUrl(videoId);
+                videoContainer.innerHTML = `
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        src="${embedUrl}" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                `;
+                videoContainer.style.display = 'block';
+                placeholder.style.display = 'none';
+            } else {
+                //ลิงค์ไม่ถูก
+                videoContainer.style.display = 'none';
+                placeholder.style.display = 'flex';
+                placeholder.innerHTML = `
+                    <div style="text-align: center;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2em; color: #ff6b6b; margin-bottom: 10px;"></i>
+                        <p>Invalid YouTube URL</p>
+                        <small style="color: #666;">${exercise.videoUrl}</small>
+                    </div>
+                `;
+            }
+        } else {
+            //local
+            videoContainer.innerHTML = `
+                <video id="exerciseVideo" controls style="width: 100%; border-radius: 8px;">
+                    <source src="${exercise.videoUrl}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            `;
+            videoContainer.style.display = 'block';
+            placeholder.style.display = 'none';
+            
+            //error
+            const video = videoContainer.querySelector('video');
+            video.onerror = () => {
+                videoContainer.style.display = 'none';
+                placeholder.style.display = 'flex';
+                placeholder.innerHTML = `
+                    <div style="text-align: center;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 2em; color: #ff6b6b; margin-bottom: 10px;"></i>
+                        <p>Video file not found</p>
+                        <small style="color: #666;">${exercise.videoUrl}</small>
+                    </div>
+                `;
+            };
+        }
     }
 };
 
@@ -533,4 +629,4 @@ console.log("Wow! You opened console.");
 console.log("This project is a part of my research to impove my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
 console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol")
-console.log("Last edited on 14/09/2024 14:20 (By Geo, of course :P)");
+console.log("Last edited on 14/09/2024 17:22 (By Geo, of course :P)");

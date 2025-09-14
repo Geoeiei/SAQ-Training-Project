@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,7 +27,7 @@
             </div>
         </header>
 
-                <div id="mainPage" class="page active">
+        <div id="mainPage" class="page active">
             <section class="training-section">
                 <h2 class="section-title">SAQ Training</h2>
                 
@@ -106,16 +107,11 @@
                 
                 <div class="detail-content">
                     <div class="media-section">
-                        <div class="video-container">
-                            <video id="exerciseVideo" controls>
-                                <source src="" type="video/mp4">
-                                บราวเซอร์ของคุณไม่รองรับการแสดงผลของวีดีโอ
-                            </video>
-                            <div id="videoPlaceholder" class="video-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">📹</div>
-                                    <p>วีดีโอสาธิตจะแสดงที่นี่</p>
-                                </div>
+                        <div id="videoContainer"></div>
+                        <div id="videoPlaceholder" class="video-placeholder">
+                            <div class="placeholder-content">
+                                <div class="placeholder-icon">📹</div>
+                                <p>วีดีโอสาธิตจะแสดงที่นี่</p>
                             </div>
                         </div>
                     </div>
