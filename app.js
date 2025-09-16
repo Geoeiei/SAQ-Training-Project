@@ -22,7 +22,7 @@ const exercisesData = {
         },
         {
             id: 2,
-            title: "Knee Low",
+            title: "Low Knee",
             description: "พัฒนาความเร็วในการซอยเท้า และความแข็งแร็งของข้อเท้า",
             fullDescription: "ฝึกวิ่งโดยยกเข่าต่ำ เน้นความถี่ของก้าว (stride frequency) และการเคลื่อนไหวต่อเนื่อง",
             steps: [
@@ -35,7 +35,7 @@ const exercisesData = {
                 "รักษาลำตัวนิ่ง ไม่กระเด้งสูง",
                 "เน้นความต่อเนื่องมากกว่าความสูงของเข่า"
             ],
-            videoUrl: "https://www.youtube.com/watch?v=9kzVKEjuU80",
+            videoUrl: "https://youtu.be/Oio0sXGl5wc",
             videoType: "youtube"
         },
         {
@@ -96,13 +96,13 @@ const exercisesData = {
         },
         {
             id: 6,
-            title: "Knee Low บนรั้ว",
+            title: "Low Knee บนรั้ว",
             description: "พัฒนาความเร็วในการซอยเท้า และความแข็งแรงของข้อเท้า",
             fullDescription: "การก้าวยกเข่าต่ำข้ามรั้ว เน้นการฝึกการประสานกับของเท้า (coordination footwork) และความคล่องแคล่ว (agility)",
             steps: [
                 "วางรั้วเตี้ยเรียงเป็นแถว",
                 "ยืนเตรียมตัวหน้าแถวรั้ว",
-                "ซอยเท้าเร็วๆ ข้ามรั้วโดยยกเข่าต่ำ (Knee Low)",
+                "ซอยเท้าเร็วๆ ข้ามรั้วโดยยกเข่าต่ำ (Low Knee)",
                 "เคลื่อนไหวต่อเนื่องจนจบรั้วทั้งหมด"
             ],
             tips: [
@@ -111,7 +111,7 @@ const exercisesData = {
                 "ก้าวขาให้มั่นคงและเร็ว",
                 "ค่อยๆฝึกให้ชำนาญก่อน จึงค่อยเพิ่มความเร็ว"
             ],
-            videoUrl: "https://youtu.be/jgTHBNEPfA0",
+            videoUrl: "https://youtu.be/VRSY4wpzm4g",
             videoType: "youtube"
         },
         {
@@ -130,7 +130,7 @@ const exercisesData = {
                 "ลงเท้าเบาและต่อเนื่อง",
                 "รักษาสมดุลลำตัว"
             ],
-            videoUrl: "https://youtu.be/R0r7eGpwMiQ",
+            videoUrl: "https://youtu.be/IVToBbpJswo",
             videoType: "youtube"
         },
         {
@@ -149,7 +149,7 @@ const exercisesData = {
                 "ระวังไม่สะดุดรั้ว",
                 "ใช้แขนแกว่งให้เป็นจังหวะ (rhythm)"
             ],
-            videoUrl: "https://youtu.be/27NzeV-NBoQ",
+            videoUrl: "https://youtu.be/RAnAseHOrK0",
             videoType: "youtube"
         },
         {
@@ -160,14 +160,14 @@ const exercisesData = {
             steps: [
                 "ยืนเอียงตัวเล็กน้อย พิงมือที่กำแพง",
                 "ซอยเท้าเร็วๆอยู่กับที่ รอฟังสัญญาณจากผู้ฝึก",
-                "เมื่อได้รับสัญญาณให้กระตุกเข่า โดยยกเข่าเร็วและสูงระดับสะโพกเล็กน้อย (Knee Low)"
+                "เมื่อได้รับสัญญาณให้กระตุกเข่า โดยยกเข่าเร็วและสูงระดับสะโพกเล็กน้อย (Low Knee)"
             ],
             tips: [
                 "เอียงตัวเล็กน้อยไปข้างหน้า",
                 "ยกเข่าเร็ว ลงเท้าด้วยปลายเท้า",
                 "รักษาแกนลำตัว (core) ให้มั่นคงและไม่บิดเอว"
             ],
-            videoUrl: "https://youtu.be/jSam3dHdXiI",
+            videoUrl: "https://youtu.be/43sO5S3nNpU",
             videoType: "youtube"
         }
     ],
@@ -629,4 +629,4 @@ console.log("Wow! You opened console.");
 console.log("This project is a part of my research to impove my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
 console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol")
-console.log("Last edited on 15/09/2024 18:49 (By Geo, of course :P)");
+console.log("Last edited on 16/09/2024 19:14 (By Geo, of course :P)");
