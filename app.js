@@ -23,7 +23,7 @@ const exercisesData = {
         {
             id: 2,
             title: "Low Knee",
-            description: "พัฒนาความเร็วในการซอยเท้า และความแข็งแร็งของข้อเท้า",
+            description: "พัฒนาความเร็วในการซอยเท้า และความแข็งแรงของข้อเท้า",
             fullDescription: "ฝึกวิ่งโดยยกเข่าต่ำ เน้นความถี่ของก้าว (stride frequency) และการเคลื่อนไหวต่อเนื่อง",
             steps: [
                 "ยืนเตรียมพร้อมในท่าวิ่ง",
@@ -629,4 +629,4 @@ console.log("Wow! You opened console.");
 console.log("This project is a part of my research to impove my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
 console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol")
-console.log("Last edited on 16/09/2024 19:24 (By Geo, of course :P)");
+console.log("Last edited on 17/09/2024 18:58 (By Geo, of course :P)");
