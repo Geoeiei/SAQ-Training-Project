@@ -628,5 +628,6 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log("Wow! You opened console.");
 console.log("This project is a part of my research to impove my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
-console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol")
-console.log("Last edited on 17/09/2025 20:54 (By Geo, of course :P)");
+console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol");
+console.log("My gtihub page : https://github.com/Geoeiei/SAQ-Training-Project");
+console.log("Last edited on 23/09/2025 21:30 (By Geo, of course :P)");
