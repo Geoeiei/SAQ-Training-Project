@@ -625,9 +625,70 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//ธีม
+function setThemeAttr(mode){
+  if(mode === 'dark'){
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }else{
+    document.documentElement.removeAttribute('data-theme');
+  }
+}
+
+function updateToggleButtonIcon(btn){
+  //อัพเดทไอคอน
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  btn.setAttribute('aria-label', isDark ? 'สลับเป็นโหมดสว่าง' : 'สลับเป็นโหมดมืด');
+  btn.title = isDark ? 'สลับเป็นโหมดสว่าง' : 'สลับเป็นโหมดมืด';
+  btn.innerHTML = `<span class="icon">${isDark ? '🌙' : '☀️'}</span>`;
+}
+
+function applySavedTheme(){
+  const saved = localStorage.getItem('theme');
+  if(saved === 'dark' || saved === 'light'){
+    setThemeAttr(saved);
+  }else{
+    //ตั้งค่าdefault
+    setThemeAttr('light');
+  }
+}
+
+function toggleTheme(){
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+  document.documentElement.classList.add('theme-transition', 'theme-rotating');
+
+  //สลับธีม
+  if(isDark){
+    setThemeAttr('light');
+    localStorage.setItem('theme', 'light');
+  }else{
+    setThemeAttr('dark');
+    localStorage.setItem('theme', 'dark');
+  }
+
+  //อัพเดทไอคอน
+  const themeBtn = document.getElementById('themeToggle');
+  if(themeBtn){ updateToggleButtonIcon(themeBtn); }
+
+  window.setTimeout(() => {
+    document.documentElement.classList.remove('theme-transition', 'theme-rotating');
+  }, 380);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applySavedTheme();
+
+  const themeBtn = document.getElementById('themeToggle');
+  if(themeBtn){
+    updateToggleButtonIcon(themeBtn);
+    themeBtn.addEventListener('click', toggleTheme);
+  }
+});
+
+
 console.log("Wow! You opened console.");
 console.log("This project is a part of my research to improve my coding skills, if you have any suggestions, please contact me down below!");
 console.log("Hello! This is Geo ( Puttanapong Punyaputtanapong ). If you wanted to contact me, add me on discord : geonakrup");
 console.log("This project is done now btw, but I will keep updating it if I have any new ideas, or if I found any bugs or errors. lol");
 console.log("My gtihub page : https://github.com/Geoeiei/SAQ-Training-Project");
-console.log("Last edited on 23/09/2025 21:33 (By Geo, of course :P)");
+console.log("Last edited on 24/09/2025 22:50 (By Geo, of course :P)");

@@ -476,6 +476,226 @@ button:focus,
   margin-bottom: 10px;
 }
 
+.theme-toggle:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.saq-credits{
+  margin-top:22px;
+  padding:16px 18px;
+  border-radius:12px;
+  background: var(--card-background);
+  border:1px solid var(--border-color);
+  box-shadow: var(--shadow-light);
+}
+.saq-credits__title{
+  font-weight:700;
+  margin-bottom:6px;
+  color: var(--text-color);
+}
+.saq-credits__text{
+  color: var(--text-light);
+}
+
+/*Dark mode*/
+
+*,
+*::before,
+*::after {
+  transition: color 240ms ease, background-color 240ms ease,
+  border-color 240ms ease, box-shadow 240ms ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+html[data-theme="dark"]{
+  --text-color: #e6eaf2;
+  --text-light: #747577;
+  --background: #0e131a;
+  --card-background: #161c25;
+  --border-color: rgba(255,255,255,0.10);
+  --glass: rgba(20, 26, 36, .6);
+
+  --accent-strong: #ff6b6b;
+  --accent-strong-hover: #ff7f7f;
+  --accent-strong-active: #e24545;
+  --accent-strong-contrast: #0e1116;
+  --accent-outline: rgba(255,107,107,.45);
+}
+
+html[data-theme="dark"] body{
+  background: linear-gradient(180deg, #0c111a 0%, var(--background) 60%);
+}
+html[data-theme="dark"] header{
+  color: #ffffff;
+}
+html[data-theme="dark"] .training-section,
+html[data-theme="dark"] .exercise-card,
+html[data-theme="dark"] .exercise-detail,
+html[data-theme="dark"] .saq-detail-item,
+html[data-theme="dark"] .saq-credits,
+html[data-theme="dark"] .page-header,
+html[data-theme="dark"] .media-section{
+  background: var(--card-background);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+html[data-theme="dark"] .description-content,
+html[data-theme="dark"] .info-card p,
+html[data-theme="dark"] .tips-list li,
+html[data-theme="dark"] .saq-credits__text{
+  color: var(--text-light);
+}
+
+html[data-theme="dark"] .steps-list li{
+  background: #121722;
+  border-left-color: #ea4141;
+}
+html[data-theme="dark"] .tips-list li{
+  background: rgba(255, 208, 0, 0.12);
+  border-left-color: #ffd24d;
+  color: #f4f0e6;
+}
+
+html[data-theme="dark"] a{
+  color: #f66b6b;
+}
+html[data-theme="dark"] a:hover{
+  color: #ffb4b3;
+  text-decoration: underline;
+}
+
+.exercise-card .view-exercises,
+.exercise-card button,
+.exercise-card a.button,
+.exercise-list .exercise-item a,
+.exercise-grid a.exercise-link{
+  background: var(--accent-strong);
+  color: var(--accent-strong-contrast);
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,.10);
+}
+.exercise-card .view-exercises:hover,
+.exercise-card button:hover,
+.exercise-card a.button:hover,
+.exercise-list .exercise-item a:hover,
+.exercise-grid a.exercise-link:hover{
+  background: var(--accent-strong-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+.exercise-card .view-exercises:active,
+.exercise-card button:active,
+.exercise-card a.button:active,
+.exercise-list .exercise-item a:active,
+.exercise-grid a.exercise-link:active{
+  background: var(--accent-strong-active);
+  transform: translateY(0);
+}
+.exercise-card .view-exercises:focus-visible,
+.exercise-card button:focus-visible,
+.exercise-card a.button:focus-visible,
+.exercise-list .exercise-item a:focus-visible,
+.exercise-grid a.exercise-link:focus-visible{
+  outline: 3px solid var(--accent-outline);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px var(--accent-outline);
+}
+.exercise-card .exercise-title,
+.exercise-item .title,
+.exercise-link .title{
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+html[data-theme="dark"] .btn,
+html[data-theme="dark"] button,
+html[data-theme="dark"] .view-exercises{
+  background-color: #2b3446;
+  color: #ffffff;
+  border-color: rgba(255,255,255,.18);
+  text-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+html[data-theme="dark"] .btn:hover,
+html[data-theme="dark"] button:hover,
+html[data-theme="dark"] .view-exercises:hover{
+  background-color: #3a455c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+
+.theme-toggle{
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 1000;
+  padding: 10px 12px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  background: #ffffff;
+  color: #111827;
+  border:1px solid rgba(0,0,0,.12);
+  cursor: pointer;
+  font-size: 1rem;
+}
+html[data-theme="dark"] .theme-toggle{
+  background:#2b3446;
+  color:#fff;
+  border-color: rgba(255,255,255,.18);
+}
+.theme-toggle .icon{
+  display:inline-block;
+  transition: transform 280ms ease;
+}
+
+@supports not (selector(:has(*))) {
+  body { padding-bottom: 84px; }
+}
+@media (max-width: 480px) {
+  .theme-toggle{ right: 12px; bottom: 12px; }
+}
+
+html.theme-transition::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(0,0,0,.0);
+  animation: theme-fade 360ms ease;
+  z-index: 9999;
+}
+@keyframes theme-fade{
+  0%   { background: rgba(0,0,0, .10); }
+  100% { background: rgba(0,0,0, .0); }
+}
+html.theme-rotating .theme-toggle .icon{
+  transform: rotate(180deg) scale(1.05);
+}
+
+html[data-theme="dark"] .info-card{
+  background: var(--card-background);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.info-card .exercise-count{
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+html[data-theme="dark"] .info-card .exercise-count{
+  color: var(--text-color);
+  opacity: 0.92;
+}
+
 /* Hello! This is Geo. */ 
 /* I don't think a lot of people will inspect elements to see my styles. lol */ 
 /* But if you do, well hello!. Also if you wanted to contact me, open the console! */
