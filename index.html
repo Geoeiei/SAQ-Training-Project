@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="การเรียนรู้ท่าทางการออกกำลังกายแบบเอส เอ คิว (SAQ) - Speed, Agility, Quickness" />
   <title>SAQ Training</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,186 +16,202 @@
 <body>
   <div class="container">
     <header>
+      <!-- Decorative background pattern -->
+      <div class="header-pattern"></div>
+      
       <div class="header-content">
         <div class="logo-section">
           <h1>การเรียนรู้ท่าทางการออกกำลังกายแบบเอส เอ คิว (SAQ)</h1>
           <p class="subtitle">Speed • Agility • Quickness</p>
         </div>
         <nav class="nav-controls">
-          <button class="theme-toggle" id="backBtn" style="display:none">
-            <span class="back-arrow">←</span> กลับ
+          <button class="back-btn glass-button" id="backBtn" style="display:none" aria-label="กลับสู่หน้าหลัก">
+            <span class="back-arrow"><i class="fas fa-arrow-left"></i></span> กลับ
           </button>
-          <button class="back-btn" id="themeToggle" aria-label="Toggle dark mode" title="สลับโหมด">🌙</button>
+          <button class="theme-toggle-header glass-button" id="themeToggle" aria-label="Toggle dark mode" title="สลับโหมด">
+            <span class="icon"><i class="fas fa-moon"></i></span>
+          </button>
         </nav>
       </div>
     </header>
 
-    <div id="mainPage" class="page active">
-      <section class="training-section">
-        <div class="info-row center full">
-          <div class="info-card">
-            <div class="info-icon">📘</div>
-            <h3>ความหมาย SAQ</h3>
-            <p>ความหมายของ Speed Agility และ Quickness</p>
-            <button class="view-detail-btn" id="openDefinition">ดูความหมาย →</button>
+    <main>
+      <div id="mainPage" class="page active">
+        <section class="training-section">
+          <div class="info-row center full">
+            <div class="info-card definition-card">
+              <div class="info-icon"><i class="fas fa-book-open"></i></div>
+              <h3>ความหมาย SAQ</h3>
+              <p>ความหมายของ Speed Agility และ Quickness</p>
+              <button class="view-detail-btn" id="openDefinition">ดูความหมาย &rarr;</button>
+            </div>
           </div>
-        </div>
-        <div class="info-grid">
-          <div class="info-card">
-            <div class="info-icon">🏃‍♂️</div>
-            <h3>Speed (ความเร็ว)</h3>
-            <p>การความสามารถในการเคลื่อนที่ตามเป้าหมายที่ต้องการลักษณะของความสามารถสูงสุด
-              โดยเป็นการทำงานระหว่างระบบประสาทและกล้ามเนื้อ</p>
-            <div class="exercise-count">9 ท่าการฝึก</div>
-            <button class="view-exercises" data-category="speed">ดูท่าฝึกทั้งหมด →</button>
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon speed-icon"><i class="fas fa-running"></i></div>
+              <h3>Speed (ความเร็ว)</h3>
+              <p>ความสามารถในการเคลื่อนที่ตามเป้าหมายที่ต้องการลักษณะของความสามารถสูงสุด โดยเป็นการทำงานระหว่างระบบประสาทและกล้ามเนื้อ</p>
+              <div class="exercise-count"><i class="fas fa-layer-group"></i> 9 ท่าการฝึก</div>
+              <button class="view-exercises" data-category="speed">ดูท่าฝึกทั้งหมด &rarr;</button>
+            </div>
+            <div class="info-card">
+              <div class="info-icon agility-icon"><i class="fas fa-random"></i></div>
+              <h3>Agility (ความคล่องแคล่ว)</h3>
+              <p>การฝึกความสามารถในการเคลื่อนไหวที่มีการเปลี่ยนทิศทางความเร็วและรูปแบบได้อย่างรวดเร็วตามสิ่งเร้าที่กำหนด</p>
+              <div class="exercise-count"><i class="fas fa-layer-group"></i> 4 ท่าการฝึก</div>
+              <button class="view-exercises" data-category="agility">ดูท่าฝึกทั้งหมด &rarr;</button>
+            </div>
+            <div class="info-card">
+              <div class="info-icon quickness-icon"><i class="fas fa-bolt"></i></div>
+              <h3>Quickness (ความว่องไว)</h3>
+              <p>การฝึกการตอบสนองในการปรับเปลี่ยนจังหวะในการเคลื่อนไหวได้อย่างรวดเร็วฉับพลันทันทีทันใด</p>
+              <div class="exercise-count"><i class="fas fa-layer-group"></i> 7 ท่าการฝึก</div>
+              <button class="view-exercises" data-category="quickness">ดูท่าฝึกทั้งหมด &rarr;</button>
+            </div>
           </div>
-          <div class="info-card">
-            <div class="info-icon">🤸‍♂️</div>
-            <h3>Agility (ความคล่องแคล่ว)</h3>
-            <p>การฝึกความสามารถในการเคลื่อนไหวที่มีการเปลี่ยนทิศทางความเร็วและรูปแบบได้อย่างรวดเร็วตามสิ่งเร้าที่กำหนด
-            </p>
-            <div class="exercise-count">4 ท่าการฝึก</div>
-            <button class="view-exercises" data-category="agility">ดูท่าฝึกทั้งหมด →</button>
+          <div class="info-row center full">
+            <div class="info-card credits-card">
+              <div class="info-icon"><i class="fas fa-users"></i></div>
+              <h3>ผู้จัดทำ</h3>
+              <p>ข้อมูลผู้จัดทำ</p>
+              <button class="view-detail-btn" id="openCredits">ดูผู้จัดทำ &rarr;</button>
+            </div>
           </div>
-          <div class="info-card">
-            <div class="info-icon">⚡</div>
-            <h3>Quickness (ความว่องไว)</h3>
-            <p>การฝึกการตอบสนองในการปรับเปลี่ยนจังหวะในการเคลื่อนไหวได้อย่างรวดเร็วฉับพลันทันทีทันใด</p>
-            <div class="exercise-count">7 ท่าการฝึก</div>
-            <button class="view-exercises" data-category="quickness">ดูท่าฝึกทั้งหมด →</button>
-          </div>
-        </div>
-        <div class="info-row center full">
-          <div class="info-card">
-            <div class="info-icon">👤</div>
-            <h3>ผู้จัดทำ</h3>
-            <p>ข้อมูลผู้จัดทำ</p>
-            <button class="view-detail-btn" id="openCredits">ดูผู้จัดทำ →</button>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <div id="exercisesPage" class="page">
-      <div class="page-header">
-        <h2 id="categoryTitle"></h2>
-        <p id="categoryDescription" class="page-subtitle"></p>
+        </section>
       </div>
-      <div id="exercisesList" class="exercises-grid"></div>
-    </div>
 
-    <div id="detailPage" class="page">
-      <article class="exercise-detail">
-        <div class="detail-header">
-          <h2 id="exerciseTitle"></h2>
-          <div class="detail-tags">
-            <span class="tag" id="exerciseCategory"></span>
+      <div id="exercisesPage" class="page">
+        <div class="page-header">
+          <h2 id="categoryTitle"></h2>
+          <p id="categoryDescription" class="page-subtitle"></p>
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="exerciseSearch" placeholder="ค้นหาท่าฝึก..." aria-label="ค้นหาท่าฝึก">
           </div>
         </div>
+        <div id="exercisesList" class="exercises-grid"></div>
+      </div>
 
-        <div class="detail-content">
-          <div class="media-section">
-            <div id="videoContainer" class="video-container"></div>
-            <div id="videoPlaceholder" class="video-placeholder">
-              <div class="placeholder-content">
-                <div class="placeholder-icon">📹</div>
-                <p>วีดีโอสาธิตจะแสดงที่นี่</p>
+      <div id="detailPage" class="page">
+        <article class="exercise-detail">
+          <div class="detail-header">
+            <h2 id="exerciseTitle"></h2>
+            <div class="detail-tags">
+              <span class="tag" id="exerciseCategory"></span>
+            </div>
+          </div>
+
+          <div class="detail-content">
+            <div class="media-section">
+              <div id="videoContainer" class="video-container"></div>
+              <div id="videoPlaceholder" class="video-placeholder">
+                <div class="placeholder-content">
+                  <div class="placeholder-icon"><i class="fas fa-video"></i></div>
+                  <p>วีดีโอสาธิตจะแสดงที่นี่</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="info-section">
+            <div class="info-section">
+              <section class="description-section">
+                <h3><i class="fas fa-info-circle"></i> รายละเอียดการฝึก</h3>
+                <div id="exerciseDescription" class="description-content"></div>
+              </section>
+
+              <section class="instructions-section">
+                <h3><i class="fas fa-list-ol"></i> ขั้นตอนการฝึก</h3>
+                <ol id="exerciseSteps" class="steps-list"></ol>
+              </section>
+
+              <section class="tips-section">
+                <h3><i class="fas fa-lightbulb"></i> เทคนิคและข้อควรระวัง</h3>
+                <ul id="exerciseTips" class="tips-list"></ul>
+              </section>
+            </div>
+          </div>
+          
+          <div class="detail-navigation">
+            <button id="prevExerciseBtn" class="nav-btn"><i class="fas fa-arrow-left"></i> ก่อนหน้า</button>
+            <button id="nextExerciseBtn" class="nav-btn">ถัดไป <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </article>
+      </div>
+      
+      <div id="definitionPage" class="page">
+        <div class="page-header">
+          <h2>ความหมาย SAQ</h2>
+        </div>
+        <article class="exercise-detail">
+          <div class="detail-content full-width-content">
             <section class="description-section">
-              <h3>รายละเอียดการฝึก</h3>
-              <div id="exerciseDescription" class="description-content"></div>
+              <h3><i class="fas fa-question-circle"></i> SAQ คืออะไร?</h3>
+              <div class="description-content">
+                SAQ Training คือ การฝึกที่ผสมผสานระหว่างความเร็ว (Speed) ความคล่องแคล่วว่องไว (Agility) และความไว
+                (Quickness) เป็นรูปแบบการฝึกซ้อมที่มุ่งพัฒนาสมรรถนะการเคลื่อนไหวด้านความเร็ว ปฏิกิริยาการตอบสนอง
+                การออกแรงด้วยความเร็วสูงสุด จากการทำงานที่อาศัยความสัมพันธ์ของระบบประสาทและกล้ามเนื้อ
+                <br /><br />
+                <strong><i class="fas fa-running" style="color:var(--primary-color)"></i> Speed</strong> — ความสามารถในการเคลื่อนที่หรือการเคลื่อนไหวด้วยความเร็ว
+                เป็นความสามารถในการเคลื่อนที่ตามเป้าหมายที่ต้องการโดยเป็นการทำงานระหว่างระบบประสาทและกล้ามเนื้อ
+                <br /><br />
+                <strong><i class="fas fa-random" style="color:var(--accent-color)"></i> Agility</strong> —
+                ความสามารถในการเคลื่อนไหวที่มีการเปลี่ยนทิศทางความเร็วและรูปแบบได้อย่างรวดเร็วตามสิ่งเร้าที่กำหนดมา
+                โดยความคล่องแคล่วว่องไวจะขึ้นอยู่กับความสัมพันธ์การเคลื่อนที่และการทรงตัว<br /><br />
+                <strong><i class="fas fa-bolt" style="color:var(--secondary-color)"></i> Quickness</strong> —
+                การตอบสนองในการปรับเปลี่ยนจังหวะในการเคลื่อนไหวได้อย่างรวดเร็วฉับพลันทันทีทันใด
+                ซึ่งความสามารถลักษณะดังกล่าวนี้จำเป็นต้องอาศัยองค์ประกอบที่สำคัญหลายประการมาผสมผสานกัน
+                ไม่ว่าจะเป็นความเร็ว ความสามารถในการเป็นทิศทาง หรือรูปแบบการเคลื่อนไหวที่หลากหลาย
+              </div>
             </section>
-
-            <section class="instructions-section">
-              <h3>ขั้นตอนการฝึก</h3>
-              <ol id="exerciseSteps" class="steps-list"></ol>
-            </section>
-
-            <section class="tips-section">
-              <h3>เทคนิคและข้อควรระวัง</h3>
-              <ul id="exerciseTips" class="tips-list"></ul>
+            <section class="instructions-section" style="margin-top: 24px;">
+              <h3><i class="fas fa-sitemap"></i> องค์ประกอบ &amp; ไปดูท่าฝึก</h3>
+              <ol class="steps-list saq-components">
+                <li>
+                  <div class="comp-head">
+                    <strong>Speed</strong>
+                    <button class="view-exercises" data-category="speed">ดูท่า Speed &rarr;</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="comp-head">
+                    <strong>Agility</strong>
+                    <button class="view-exercises" data-category="agility">ดูท่า Agility &rarr;</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="comp-head">
+                    <strong>Quickness</strong>
+                    <button class="view-exercises" data-category="quickness">ดูท่า Quickness &rarr;</button>
+                  </div>
+                </li>
+              </ol>
             </section>
           </div>
-        </div>
-      </article>
-    </div>
-    <div id="definitionPage" class="page">
-      <div class="page-header">
-        <h2>ความหมาย SAQ</h2>
+        </article>
       </div>
-      <article class="exercise-detail">
-        <div class="detail-content" style="display:block; padding:24px;">
-          <section class="description-section">
-            <h3>SAQ คืออะไร?</h3>
-            <div class="description-content">
-              SAQ Training คือ การฝึกที่ผสมผสานระหว่างความเร็ว (Speed) ความคล่องแคล่วว่องไว (Agility) และความไว
-              (Quickness) เป็นรูปแบบการฝึกซ้อมที่มุ่งพัฒนาสมรรถนะการเคลื่อนไหวด้านความเร็ว ปฏิกิริยาการตอบสนอง
-              การออกแรงด้วยความเร็วสูงสุด จากการทำงานที่อาศัยความสัมพันธ์ของระบบประสาทและกล้ามเนื้อ
-              <br />
-              <strong>Speed</strong> — ความสามารถในการเคลื่อนที่หรือการเคลื่อนไหวด้วยความเร็ว
-              เป็นความสามารถในการเคลื่อนที่ตามเป้าหมายที่ต้องการโดยเป็นการทำงานระหว่างระบบประสาทและกล้ามเนื้อ
-              <br />
-              <strong>Agility</strong> —
-              ความสามารถในการเคลื่อนไหวที่มีการเปลี่ยนทิศทางความเร็วและรูปแบบได้อย่างรวดเร็วตามสิ่งเร้าที่กำหนดมา
-              โดยความคล่องแคล่วว่องไวจะขึ้นอยู่กับความสัมพันธ์การเคลื่อนที่และการทรงตัว<br />
-              <strong>Quickness</strong> —
-              การตอบสนองในการปรับเปลี่ยนจังหวะในการเคลื่อนไหวได้อย่างรวดเร็วฉับพลันทันทีทันใด
-              ซึ่งความสามารถลักษณะดังกล่าวนี้จำเป็นต้องอาศัยองค์ประกอบที่สำคัญหลายประการมาผสมผสานกัน
-              ไม่ว่าจะเป็นความเร็ว ความสามารถในการเป็นทิศทาง หรือรูปแบบการเคลื่อนไหวที่หลากหลาย <br />
-            </div>
-          </section>
-          <section class="instructions-section">
-            <h3>องค์ประกอบ &amp; ไปดูท่าฝึก</h3>
-            <ol class="steps-list saq-components">
-              <li>
-                <div class="comp-head">
-                  <strong>Speed</strong>
-                  <button class="view-exercises" data-category="speed">ดูท่า Speed →</button>
-                </div>
-              </li>
-              <li>
-                <div class="comp-head">
-                  <strong>Agility</strong>
-                  <button class="view-exercises" data-category="agility">ดูท่า Agility →</button>
-                </div>
-              </li>
-              <li>
-                <div class="comp-head">
-                  <strong>Quickness</strong>
-                  <button class="view-exercises" data-category="quickness">ดูท่า Quickness →</button>
-                </div>
-              </li>
-            </ol>
-          </section>
-        </div>
-      </article>
-    </div>
 
-    <div id="creditsPage" class="page">
-      <div class="page-header">
-        <h2>ผู้จัดทำ</h2>
+      <div id="creditsPage" class="page">
+        <div class="page-header">
+          <h2>ผู้จัดทำ</h2>
+        </div>
+        <article class="exercise-detail">
+          <div class="detail-content full-width-content">
+            <section class="description-section">
+              <h3><i class="fas fa-id-card"></i> ข้อมูลผู้จัดทำ</h3>
+              <div class="description-content">
+                เว็บไซต์นี้เป็นส่วนหนึ่งของงานวิจัย การพัฒนาเว็บไซต์สำหรับการเรียนรู้ท่าทางการออกกำลังกาย SAQ <br /><br />
+                อาจารย์ที่ปรึกษา : <strong>อาจารย์ จาตุรนต์ ลิ่มหัน</strong><br /><br />
+                ผู้จัดทำ :<br />
+                <ul class="credits-list">
+                  <li><strong>นาย ณฐนน ธัชธำรงชัย</strong></li>
+                  <li><strong>นาย ปิยชนน์ ฉัตรพิชิตพงศ์</strong></li>
+                  <li><strong>นาย พัฒนพงศ์ ปุญญพัฒนพงศ์</strong></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </article>
       </div>
-      <article class="exercise-detail">
-        <div class="detail-content" style="display:block; padding:24px;">
-          <section class="description-section">
-            <h3>ข้อมูลผู้จัดทำ</h3>
-            <div class="description-content">
-              เว็บไซต์นี้เป็นส่วนหนึ่งของงานวิจัย การพัฒนาเว็บไซต์สำหรับการเรียนรู้ท่าทางการออกกำลังกาย SAQ <br />
-              อาจารย์ที่ปรึกษา : <strong>อาจารย์ จาตุรนต์ ลิ่มหัน</strong><br />
-              ผู้จัดทำ :<br />
-              <strong>นาย ณฐนน ธัชธำรงชัย</strong><br />
-              <strong>นาย ปิยชนน์ ฉัตรพิชิตพงศ์</strong><br />
-              <strong>นาย พัฒนพงศ์ ปุญญพัฒนพงศ์</strong><br />
-            </div>
-          </section>
-        </div>
-      </article>
-    </div>
-
+    </main>
   </div>
 
   <script src="app.js"></script>
