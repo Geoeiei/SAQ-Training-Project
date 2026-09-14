@@ -1,7 +1,7 @@
-// เปิด/ปิด tips (Toggle tips)
+//tips (kinda useless lol)
 const ENABLE_TIPS = true;
 
-// ข้อมูลการฝึก (Exercises Data)
+//data
 const exercisesData = {
   speed: [
     {
@@ -307,7 +307,7 @@ const exercisesData = {
   ]
 };
 
-// คำอธิบาย SAQ (Category Descriptions)
+//explain
 const categoryDescriptions = {
   speed: "การฝึกความเร็ว เป็นความสามารถในการเคลื่อนที่ตามเป้าหมายที่ต้องการลักษณะของความสามารถสูงสุด โดยเป็นการทำงานระหว่างระบบประสาทและกล้ามเนื้อ",
   agility: "การฝึกความสามารถในการเคลื่อนไหวที่มีการเปลี่ยนทิศทางความเร็วและรูปแบบได้อย่างรวดเร็วตามสิ่งเร้าที่กำหนด",
@@ -320,20 +320,20 @@ const categoryLabels = {
   quickness: "Quickness"
 };
 
-// ฟังก์ชั่นช่วยดึง YouTube ID
+// yt id
 function getYouTubeVideoId(url) {
   if (!url) return null;
   const m = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([\w-]{11})/);
   return m ? m[1] : null;
 }
 
-// ฟังก์ชั่นสร้าง YouTube Embed URL
+// yt embed url
 function getYouTubeEmbedUrl(videoId) {
   if (!videoId) return "";
   return `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&modestbranding=1&playsinline=1`;
 }
 
-// สถานะของแอพ (App State Management)
+//appstate
 const AppState = {
   currentPage: "main",
   currentCategory: null,
@@ -342,12 +342,12 @@ const AppState = {
   navigateToPage(pageName, data = null) {
     this.currentPage = pageName;
     
-    // รีเซ็ตคลาส active 
+    //reset active
     document.querySelectorAll(".page").forEach(page => {
       page.classList.remove("active");
     });
 
-    // เพิ่มแอนิเมชั่นตอนเปลี่ยนหน้า
+    //animation switch page
     setTimeout(() => {
       const targetPage = document.getElementById(`${pageName}Page`);
       if (targetPage) {
@@ -355,13 +355,13 @@ const AppState = {
         setTimeout(() => targetPage.classList.remove("fade-in"), 400);
       }
 
-      // แสดงหรือซ่อนปุ่มกลับ
+      //back buttonm
       const backBtn = document.getElementById("backBtn");
       if (backBtn) {
         backBtn.style.display = pageName === "main" ? "none" : "flex";
       }
       
-      // โหลดข้อมูลตามหน้าที่ไป
+      //load data
       if (pageName === "exercises" && data) {
         this.currentCategory = data;
         this.loadExercisesList(data);
@@ -370,7 +370,7 @@ const AppState = {
         this.loadExerciseDetail(data);
       }
       
-      // เลื่อนขึ้นบนสุด
+      //scroll top
       window.scrollTo({ top: 0, behavior: "smooth" });
     }, 50);
   },
@@ -395,7 +395,7 @@ const AppState = {
     
     const exercises = exercisesData[category] || [];
     
-    // ใช้ fragment เพื่อประสิทธิภาพ
+    //use fragment
     const fragment = document.createDocumentFragment();
     
     exercises.forEach((exercise, index) => {
@@ -404,7 +404,7 @@ const AppState = {
       card.style.animationDelay = `${index * 0.05}s`;
       card.classList.add("fade-in");
       
-      // Determine badge color based on category
+      //use badge color based on exercise
       let badgeColor = category === 'speed' ? 'var(--primary-color)' : category === 'agility' ? 'var(--accent-color)' : 'var(--secondary-color)';
       let badgeTextColor = '#ffffff';
       
@@ -445,7 +445,7 @@ const AppState = {
       }
     }
     
-    // Setup Next / Prev Navigation
+    //next and prev nav
     const currentList = exercisesData[this.currentCategory] || [];
     const currentIndex = currentList.findIndex(ex => ex.id === exercise.id);
     
@@ -544,9 +544,9 @@ const AppState = {
   }
 };
 
-// การจัดการเหตุการณ์ (Event Listeners)
+//event listenneers
 document.addEventListener("DOMContentLoaded", () => {
-  // การกดปุ่มหมวดหมู่
+  //exercise
   document.querySelectorAll(".view-exercises").forEach(btn => {
     btn.addEventListener("click", e => {
       e.preventDefault();
@@ -555,7 +555,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // การกดปุ่มดูรายละเอียด (ใช้ Event Delegation)
+  //detail
   const exercisesList = document.getElementById("exercisesList");
   if (exercisesList) {
     exercisesList.addEventListener("click", e => {
@@ -571,7 +571,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ปุ่มกลับ
+  //back button
   const backBtn = document.getElementById("backBtn");
   if (backBtn) {
     backBtn.addEventListener("click", e => {
@@ -584,7 +584,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // แป้นพิมพ์ (Escape กลับหน้าหลัก)
+  //escape button
   document.addEventListener("keydown", e => {
     if (e.key === "Escape" && AppState.currentPage !== "main") {
       if (AppState.currentPage === "detail") {
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ความหมาย SAQ
+  //meaning
   const openDefinition = document.getElementById("openDefinition");
   if (openDefinition) {
     openDefinition.addEventListener("click", e => {
@@ -604,7 +604,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ผู้จัดทำ
+  //ma and the gang also my teacher (yoooooooooo whats up chat)
   const openCredits = document.getElementById("openCredits");
   if (openCredits) {
     openCredits.addEventListener("click", e => {
@@ -613,7 +613,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ค้นหาท่าฝึก (Search Exercises)
+  //search button
   const searchInput = document.getElementById("exerciseSearch");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
@@ -634,7 +634,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// การจัดการธีม (Theme Management)
+//theme management
 function setThemeAttr(mode) {
   if (mode === "dark") {
     document.documentElement.setAttribute("data-theme", "dark");
@@ -684,8 +684,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ข้อความทักทายในคอนโซล (Console Greetings)
-console.log("Hello! This is Geo. If you wanted to contact me, feel free to add me on discord : geonakrup");
-console.log("This project is a part of my research.");
+//hello whatsup
+console.log("Hello! This is Geo.");
+console.log("This project is a part of my research (That is already done :D ).");
+console.log("Hey!!!! I actually didn't think that i would look at this project and fix or improve something.");
+console.log("But I'm here lol, so that's mean i did improve something. Looking back at my old project making me got a glimpse of joy idk why lol.");
+console.log("So if you're look at console which you did, I would recommend you to look at your old projects and be proud of yourself, looking back at everything you've created.");
+console.log("Well you know what they say despite everything it's still you.");
 console.log("My github page : https://github.com/Geoeiei/SAQ-Training-Project");
-console.log("Last edited on (11/11/2025 21:30)");
+console.log("Last edited on (14/09/2026 22:58) see you again!");

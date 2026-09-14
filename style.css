@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #4338ca; /* Dark Blue-Purple */
+  --primary-color: #4338ca;
   --primary-dark: #312e81;
-  --secondary-color: #3b82f6; /* Blue */
-  --accent-color: #f43f5e; /* Rose/Pink for Agility */
+  --secondary-color: #3b82f6;
+  --accent-color: #f43f5e;
   --gradient: linear-gradient(135deg, #312e81 0%, #2563eb 100%);
   --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   
@@ -16,7 +16,7 @@
   --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
   --shadow-heavy: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-glow: 0 0 15px rgba(67, 56, 202, 0.3); /* Dark purple-blue glow */
+  --shadow-glow: 0 0 15px rgba(67, 56, 202, 0.3);
   
   --border-radius: 16px;
   --border-radius-lg: 24px;
@@ -27,13 +27,13 @@
 html[data-theme="dark"] {
   --text-color: #f1f5f9;
   --text-light: #94a3b8;
-  --background: #0B1120; /* Deep navy */
+  --background: #0B1120;
   --card-background: #1e293b;
   --border-color: rgba(255, 255, 255, 0.08);
   
-  --accent-strong: #6366f1; /* Indigo */
-  --accent-strong-hover: #4f46e5; /* Indigo Hover */
-  --accent-strong-active: #4338ca; /* Indigo Active */
+  --accent-strong: #6366f1;
+  --accent-strong-hover: #4f46e5;
+  --accent-strong-active: #4338ca;
   --accent-strong-contrast: #ffffff;
   
   --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
@@ -70,7 +70,7 @@ body {
   min-height: calc(100vh - 120px);
 }
 
-/* Header & Hero */
+/* header */
 header {
   background: var(--gradient);
   padding: 32px 40px; 
@@ -123,7 +123,7 @@ html[data-theme="dark"] header {
   letter-spacing: 1px;
 }
 
-/* Navigation Controls & Glassmorphism */
+/* navigation */
 .nav-controls {
   display: flex;
   gap: 12px;
@@ -162,9 +162,9 @@ html[data-theme="dark"] header {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Cards & Layout */
+/* layout */
 .training-section {
-  margin-top: 24px; /* Removed negative overlap to push it further down */
+  margin-top: 24px;
   position: relative;
   z-index: 10;
   padding: 32px;
@@ -315,7 +315,7 @@ html[data-theme="dark"] .view-detail-btn:hover {
   margin-left: auto;
 }
 
-/* Page Animations */
+/* animation */
 .page {
   display: none;
   opacity: 0;
@@ -350,7 +350,7 @@ html[data-theme="dark"] .view-detail-btn:hover {
   color: var(--text-light);
 }
 
-/* Search Bar */
+/* search */
 .search-container {
   position: relative;
   max-width: 480px;
@@ -387,7 +387,7 @@ html[data-theme="dark"] #exerciseSearch {
   background: rgba(0,0,0,0.2);
 }
 
-/* Exercises Grid */
+/* exercise */
 .exercises-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -441,7 +441,7 @@ html[data-theme="dark"] #exerciseSearch {
   font-size: 0.95rem;
 }
 
-/* Detail Page */
+/* detail */
 .exercise-detail {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
@@ -624,7 +624,7 @@ html[data-theme="dark"] .tips-list li {
 }
 
 .tips-list li::before {
-  content: "\f0eb"; /* FontAwesome lightbulb */
+  content: "\f0eb";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
@@ -635,7 +635,7 @@ html[data-theme="dark"] .tips-list li {
   color: var(--secondary-color);
 }
 
-/* Detail Navigation */
+/* detail nav */
 .detail-navigation {
   display: flex;
   justify-content: space-between;
@@ -711,7 +711,7 @@ html[data-theme="dark"] .nav-btn:hover:not(:disabled) {
 }
 
 .credits-list li::before {
-  content: "\f00c"; /* Checkmark */
+  content: "\f00c";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   position: absolute;
@@ -741,7 +741,7 @@ button:focus-visible,
   outline-offset: 3px;
 }
 
-/* Mobile & Tablet Breakpoints */
+/* mobile */
 @media (max-width: 992px) {
   .detail-content {
     grid-template-columns: 1fr;
